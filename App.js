@@ -25,7 +25,9 @@ export default class App extends Component<Props> {
     return (
       <WebView
         source={{uri: 'http://www.liveforce-production.com/kits_tutor_mobile/'}}
-        style={{marginTop: 20}}
+        style={{marginTop: 20}
+        javaScriptEnabled={true}
+        domStorageEnabled={true}}
       />
     );
   }
